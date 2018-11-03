@@ -29,7 +29,7 @@ class subtractTwoMatricesTest {
 	public void subtractingMatricesThreeByTwo(){
 		int[][] firstMatrix = {{1, 3, 6}, {3, 4, 6}};
 		int[][] secondMatrix = {{1,2, 2}, {3, 2, 4}};
-		int[][] result =  {{2, 5, 8}, {6, 6, 10}};
+		int[][] result =  {{0, 1, 4}, {0, 2, 2}};
 		matrix.subtractMatrices(firstMatrix, secondMatrix);
 		assertArrayEquals(matrix.subtractMatrices(firstMatrix, secondMatrix), result);	
 	}
@@ -38,7 +38,7 @@ class subtractTwoMatricesTest {
 	public void subtractingMatricesAThreeByThree(){
 		int[][] firstMatrix = {{1, 3, 6}, {3,4, 6}, {7,2,11}};
 		int[][] secondMatrix = {{1,2, 2}, {3,2, 4}, {2,3,4}};
-		int[][] result =  {{2 ,5, 8}, {6,6, 10}, {9,5,15}};
+		int[][] result =  {{0 ,1, 4}, {0, 2, 2}, {5, -1, 7}};
 		matrix.subtractMatrices(firstMatrix, secondMatrix);
 		assertArrayEquals(matrix.subtractMatrices(firstMatrix, secondMatrix), result);	
 	}
