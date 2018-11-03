@@ -26,7 +26,7 @@ class calculateDeterminantsTest {
 	 @Test
 	 public void getDeterminantOfThreeByThreeMatrix() {
 		 int[][] chosenMatrix = {{6,1,1}, {4,-2,5}, {2,8,7}};
-		 assertEquals(determinant.threeByThree(chosenMatrix), -306);
+		 assertEquals(determinant.solve(chosenMatrix), -306);
 	 }
 	 
 	 
