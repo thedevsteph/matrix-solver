@@ -9,7 +9,7 @@ import matrices.Matrix;
 
 class calculateDeterminantsTest {
 
-	 private Matrix matrix; 
+	 private DeterminantSolver determinant; 
 		
 	 @BeforeEach
 	 public void newMatrix() {
