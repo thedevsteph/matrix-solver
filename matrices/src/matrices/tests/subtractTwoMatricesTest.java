@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Test;
 
 import matrices.Matrix;
 
-
 class SubtractTwoMatricesTest {
 
 	 private Matrix matrix; 
@@ -15,7 +14,6 @@ class SubtractTwoMatricesTest {
 	 public void newMatrix() {
 		 matrix = new Matrix();
 	 }
-	 
 
 	@Test
 	public void throwsErrorIfMatricesHaveDifferentDimensions() throws Exception{
@@ -40,9 +38,5 @@ class SubtractTwoMatricesTest {
 		int[][] result =  {{0 ,1, 4}, {0, 2, 2}, {5, -1, 7}};
 		matrix.subtractMatrices(firstMatrix, secondMatrix);
 		assertArrayEquals(matrix.subtractMatrices(firstMatrix, secondMatrix), result);	
-	}
-	
-	
-	
-
+	}	
 }
