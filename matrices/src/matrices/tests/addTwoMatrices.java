@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import matrices.Matrix;
 
 
-class addTwoMatrices {
+class AddTwoMatrices {
 
 	 private Matrix matrix; 
 	

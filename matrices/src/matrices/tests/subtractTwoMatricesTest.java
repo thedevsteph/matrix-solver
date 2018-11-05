@@ -1,14 +1,13 @@
 package matrices.tests;
 
 import static org.junit.Assert.assertArrayEquals;
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import matrices.Matrix;
 
-class subtractTwoMatricesTest {
+
+class SubtractTwoMatricesTest {
 
 	 private Matrix matrix; 
 		

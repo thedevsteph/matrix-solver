@@ -18,14 +18,13 @@ public class Matrix {
 		    	System.out.println();
 	    	} 
 		}
-		catch(Throwable error) {
+		catch(RuntimeException e) {
 			errorMessage();
 		}
 	
 	    return thirdMatrix;
 	};
-	
-	
+		
 	public int[][] subtractMatrices(int[][] firstMatrix, int[][] secondMatrix){
 		int[][] thirdMatrix = new int[firstMatrix.length][firstMatrix[0].length];
 		
@@ -38,13 +37,12 @@ public class Matrix {
 		    	System.out.println();
 	    	} 
 		}
-		catch(Throwable error) {
+		catch(RuntimeException e) {
 			errorMessage();
 		}
 	
 	    return thirdMatrix;
 	};
-	
 	
 	public int[][] scalarMultiplication(int[][] matrix, int scalarValue){
 		int[][] newMatrix = new int[matrix.length][matrix[0].length];
@@ -58,11 +56,18 @@ public class Matrix {
 				System.out.println();	
 			}
 		}
-		catch(Throwable error) {
+		catch(RuntimeException e) {
 			errorMessage();
 		}
 		return newMatrix;
 	}
+	 
+	
+	public int[][] multiplyMatrices(int[][] firstMatrix, int[][] secondMatrix){
+		int[][] newMatrix = new int[firstMatrix.length][secondMatrix[0].length];
+		return secondMatrix;
+	}
+	
 	
 	
 	

@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import matrices.DeterminantSolver;
 import matrices.Matrix;
 
-class calculateDeterminantsTest {
+class CalculateDeterminantsTest {
 
 	 private DeterminantSolver determinant; 
 		
@@ -28,8 +28,7 @@ class calculateDeterminantsTest {
 		 int[][] chosenMatrix = {{6,1,1}, {4,-2,5}, {2,8,7}};
 		 assertEquals(determinant.solve(chosenMatrix), -306);
 	 }
-	 
-	 
+	  
 	 @Test
 	 public void throwsExceptionIfMatrixIsNotSquare() throws Exception{
 		 int[][] chosenMatrix = {{1,1}, {2,2,2}};
