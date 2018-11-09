@@ -78,6 +78,17 @@ public class Matrix {
 		}
 		return newMatrix;
 	}
+	
+	
+	public int[][] transposeOf(int[][] matrix){
+		int[][] transposedMatrix = new int[matrix.length][matrix[0].length];
+		for(int x = 0;  x < matrix.length; x++) {
+			for(int y = 0;  y < matrix.length; y++) {
+				transposedMatrix[x][y] = matrix[y][x];
+			}
+		}
+		return transposedMatrix;
+	}
 }
 
 
