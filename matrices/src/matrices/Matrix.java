@@ -62,8 +62,22 @@ public class Matrix {
 	
 	public int[][] multiplyMatrices(int[][] firstMatrix, int[][] secondMatrix){
 		int[][] newMatrix = new int[firstMatrix.length][secondMatrix[0].length];
-		return secondMatrix;
-	}	
+		for(int x = 0;  x < firstMatrix.length; x++) {
+			try {
+				for(int y = 0;  y < secondMatrix[0].length; y++) {
+					for(int z = 0; z < firstMatrix[0].length; z++) {
+						newMatrix[x][y] += firstMatrix[x][z] * secondMatrix[z][y];
+					}
+					System.out.printf("%5d ", newMatrix[x][y]);
+				}
+				System.out.println();
+			}
+			catch(RuntimeException e){
+				errorMessage();
+			}
+		}
+		return newMatrix;
+	}
 }
 
 

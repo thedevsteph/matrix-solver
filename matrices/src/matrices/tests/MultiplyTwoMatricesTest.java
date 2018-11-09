@@ -36,7 +36,7 @@ class MultiplyTwoMatricesTest {
 	 public void multiplyATwoByTwo() {
 		 int[][] firstMatrix = {{1,2}, {3,4}};
 		 int[][] secondMatrix =  {{2,0}, {1,2}};
-		 int[][] result = {{2,4}, {7,10}};
+		 int[][] result = {{4,4}, {10,8}};
 		 assertArrayEquals(matrix.multiplyMatrices(firstMatrix, secondMatrix), result); 
 	 }
 	 
