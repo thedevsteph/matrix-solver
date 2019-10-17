@@ -1,9 +1,5 @@
 # Matrix-Solver
 A java program to manipulate matrices.
-
-### Aim
-The primary aim of this project is learn a little Java. The challenge at hand is to replicate matrix operations using basic java code - using TDD of course! User can interact with the program via the console
-
 Operations includes:
 
 ```
